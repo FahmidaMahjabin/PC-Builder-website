@@ -15,7 +15,7 @@ const ContactPage = () => {
         <title>PH_NP-Contact Us</title>
         <meta
           name="description"
-          content="This is news portal of programming hero made by next-js"
+          content="This is product portal of programming hero made by next-js"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

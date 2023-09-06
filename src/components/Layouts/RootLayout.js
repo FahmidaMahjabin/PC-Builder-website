@@ -7,11 +7,40 @@ import {
   GoogleSquareFilled,
   TwitterSquareFilled,
 } from "@ant-design/icons";
-import { Layout, Menu } from "antd";
+import { Button, Dropdown, Layout, Menu } from "antd";
 const { Header, Content, Footer } = Layout;
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
-
+const items = [
+  {
+    key: "1",
+    label: <Link href="/cpu">CPU/Processor</Link>,
+  },
+  {
+    key: "2",
+    label: <Link href="/motherboard">Motherboard</Link>,
+  },
+  {
+    key: "3",
+    label: <Link href="/ram">RAM</Link>,
+  },
+  {
+    key: "4",
+    label: <Link href="/power-supply-unit">Power Supply Unit</Link>,
+  },
+  {
+    key: "5",
+    label: <Link href="/storage-device">Storage Device</Link>,
+  },
+  {
+    key: "6",
+    label: <Link href="/monitor">Monitor</Link>,
+  },
+  {
+    key: "7",
+    label: <Link href="/other">other</Link>,
+  },
+];
 const RootLayout = ({ children }) => {
   return (
     <Layout>
@@ -32,33 +61,34 @@ const RootLayout = ({ children }) => {
                 borderRadius: "3px",
               }}
             >
-              PH_NEWS PORTAL
+              Home
             </Link>
           </h1>
         </div>
         <Menu theme="dark" mode="vertical" className={styles.menu_items}>
-          <Link href="/allNews">
-            <items>
-              <ProfileOutlined />
-              All News
-            </items>
-          </Link>
-          <Link href="/about">
+          <Link href="/pc-builder">
             <items
               style={{
                 margin: "0px 25px",
               }}
             >
-              <UserOutlined />
-              About Us
+              PC Builder
             </items>
           </Link>
-          <Link href="/contact">
+          {/* <Link href="/contact">
             <items>
               <MobileOutlined />
               Contact Us
             </items>
-          </Link>
+          </Link> */}
+          <Dropdown
+            menu={{
+              items,
+            }}
+            placement="bottomRight"
+          >
+            <Button>Categories</Button>
+          </Dropdown>
         </Menu>
       </Header>
 
@@ -82,7 +112,7 @@ const RootLayout = ({ children }) => {
             fontSize: "28px",
           }}
         >
-          PH-NEWS PORTAL
+          PC-Builder website
         </h2>
         <p className={styles.social_icons}>
           <Link href="https://web.facebook.com/groups/programmingherocommunity">
@@ -98,7 +128,7 @@ const RootLayout = ({ children }) => {
             <LinkedinFilled />
           </Link>
         </p>
-        News Portal ©2023 Created by Programming Hero
+        PC Builder ©2023 Created by Fahmida
       </Footer>
     </Layout>
   );
