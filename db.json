@@ -5,59 +5,47 @@
       "name": "HPE-335",
       "description": "A recent study conducted by experts in the field suggests that regular exercise can have numerous health benefits, including improved cardiovascular function and increased mental well-being.",
       "price": 5000,
-      "status": "In Stock",
+      "status": "in stock",
       "rating": 4.8,
       "category": "CPU",
       "key-features": "",
-      "Reviews": [
-        ["It's grest", 4.5],
-        ["it okay", 4.2]
-      ],
+      "Reviews": ["It's grest", "It's okay"],
       "image_url": "/images/cpu-HPE.jpg"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "storage device 1",
       "description": "A recent study conducted by experts in the field suggests that regular exercise can have numerous health benefits, including improved cardiovascular function and increased mental well-being.",
       "price": 5000,
-      "status": "In Stock",
+      "status": "in stock",
       "rating": 4.8,
       "category": "storage device",
       "key-features": "",
-      "Reviews": [
-        ["It's grest", 4.5],
-        ["it okay", 4.2]
-      ],
+      "Reviews": ["It's grest", "it okay"],
       "image_url": "/images/storage-device-1.jpg"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "storage device 2",
       "description": "A recent study conducted by experts in the field suggests that regular exercise can have numerous health benefits, including improved cardiovascular function and increased mental well-being.",
       "price": 5000,
-      "status": "In Stock",
+      "status": "in stock",
       "rating": 4.8,
       "category": "storage device",
       "key-features": "",
-      "Reviews": [
-        ["It's grest", 4.5],
-        ["it okay", 4.2]
-      ],
+      "Reviews": ["It's grest", "it okay"],
       "image_url": "/images/storage-device-2.webp"
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "power supply 1",
       "description": "A recent study conducted by experts in the field suggests that regular exercise can have numerous health benefits, including improved cardiovascular function and increased mental well-being.",
       "price": 5000,
-      "status": "In Stock",
+      "status": "in stock",
       "rating": 4.8,
       "category": "power supply",
       "key-features": "",
-      "Reviews": [
-        ["It's grest", 4.5],
-        ["it okay", 4.2]
-      ],
+      "Reviews": ["It's grest", "It's okay"],
       "image_url": "/images/power-supply-1.webp"
     },
     {
@@ -65,14 +53,11 @@
       "name": "power supply 2",
       "description": "A recent study conducted by experts in the field suggests that regular exercise can have numerous health benefits, including improved cardiovascular function and increased mental well-being.",
       "price": 5000,
-      "status": "In Stock",
+      "status": "in stock",
       "rating": 4.8,
       "category": "power supply",
       "key-features": "",
-      "Reviews": [
-        ["It's grest", 4.5],
-        ["it okay", 4.2]
-      ],
+      "Reviews": ["It's grest", "It's okay"],
       "image_url": "/images/power-supply-2.jpg"
     },
     {
@@ -80,14 +65,11 @@
       "name": "power supply 3",
       "description": "A recent study conducted by experts in the field suggests that regular exercise can have numerous health benefits, including improved cardiovascular function and increased mental well-being.",
       "price": 5000,
-      "status": "In Stock",
+      "status": "in stock",
       "rating": 4.8,
       "category": "power supply",
       "key-features": "",
-      "Reviews": [
-        ["It's grest", 4.5],
-        ["it okay", 4.2]
-      ],
+      "Reviews": ["It's grest", "It's okay"],
       "image_url": "/images/power-supply-3.jpg"
     },
     {
@@ -95,14 +77,11 @@
       "name": "mother board 1",
       "description": "A recent study conducted by experts in the field suggests that regular exercise can have numerous health benefits, including improved cardiovascular function and increased mental well-being.",
       "price": 5000,
-      "status": "In Stock",
+      "status": "in stock",
       "rating": 4.8,
       "category": "mother board",
       "key-features": "",
-      "Reviews": [
-        ["It's grest", 4.5],
-        ["it okay", 4.2]
-      ],
+      "Reviews": ["It's grest", "It's okay"],
       "image_url": "/images/motherboard-1.jpg"
     },
     {
@@ -110,14 +89,11 @@
       "name": "mother board 2",
       "description": "A recent study conducted by experts in the field suggests that regular exercise can have numerous health benefits, including improved cardiovascular function and increased mental well-being.",
       "price": 5000,
-      "status": "In Stock",
+      "status": "in stock",
       "rating": 4.8,
       "category": "mother board",
       "key-features": "",
-      "Reviews": [
-        ["It's grest", 4.5],
-        ["it okay", 4.2]
-      ],
+      "Reviews": ["It's grest", "It's okay"],
       "image_url": "/images/motherboard-2.jpg"
     },
     {
@@ -125,14 +101,11 @@
       "name": "monitor 1",
       "description": "A recent study conducted by experts in the field suggests that regular exercise can have numerous health benefits, including improved cardiovascular function and increased mental well-being.",
       "price": 5000,
-      "status": "In Stock",
+      "status": "in stock",
       "rating": 4.8,
       "category": "monitor",
       "key-features": "",
-      "Reviews": [
-        ["It's grest", 4.5],
-        ["it okay", 4.2]
-      ],
+      "Reviews": ["It's grest", "It's okay"],
       "image_url": "/images/monitor-1.jpg"
     },
     {
@@ -140,14 +113,11 @@
       "name": "monitor 2",
       "description": "A recent study conducted by experts in the field suggests that regular exercise can have numerous health benefits, including improved cardiovascular function and increased mental well-being.",
       "price": 5000,
-      "status": "In Stock",
+      "status": "in stock",
       "rating": 4.8,
       "category": "monitor",
       "key-features": "",
-      "Reviews": [
-        ["It's grest", 4.5],
-        ["it okay", 4.2]
-      ],
+      "Reviews": ["It's grest", "It's okay"],
       "image_url": "/images/monitor-2.jpg"
     },
     {
@@ -155,14 +125,11 @@
       "name": "monitor 3",
       "description": "A recent study conducted by experts in the field suggests that regular exercise can have numerous health benefits, including improved cardiovascular function and increased mental well-being.",
       "price": 5000,
-      "status": "In Stock",
+      "status": "in stock",
       "rating": 4.8,
       "category": "monitor",
       "key-features": "",
-      "Reviews": [
-        ["It's grest", 4.5],
-        ["it okay", 4.2]
-      ],
+      "Reviews": ["It's grest", "It's okay"],
       "image_url": "/images/monitor-3.jpg"
     },
     {
@@ -170,14 +137,11 @@
       "name": "keyboard 1",
       "description": "A recent study conducted by experts in the field suggests that regular exercise can have numerous health benefits, including improved cardiovascular function and increased mental well-being.",
       "price": 5000,
-      "status": "In Stock",
+      "status": "in stock",
       "rating": 4.8,
       "category": "other",
       "key-features": "",
-      "Reviews": [
-        ["It's grest", 4.5],
-        ["it okay", 4.2]
-      ],
+      "Reviews": ["It's grest", "It's okay"],
       "image_url": "/images/keyboard-1.jpg"
     },
     {
@@ -185,14 +149,11 @@
       "name": "keyboard 2",
       "description": "A recent study conducted by experts in the field suggests that regular exercise can have numerous health benefits, including improved cardiovascular function and increased mental well-being.",
       "price": 5000,
-      "status": "In Stock",
+      "status": "in stock",
       "rating": 4.8,
       "category": "keyboard",
       "key-features": "",
-      "Reviews": [
-        ["It's grest", 4.5],
-        ["it okay", 4.2]
-      ],
+      "Reviews": ["It's grest", "It's okay"],
       "image_url": "/images/keyboard-2.jpg"
     },
     {
@@ -200,14 +161,11 @@
       "name": "mouse",
       "description": "A recent study conducted by experts in the field suggests that regular exercise can have numerous health benefits, including improved cardiovascular function and increased mental well-being.",
       "price": 5000,
-      "status": "In Stock",
+      "status": "in stock",
       "rating": 4.8,
       "category": "other",
       "key-features": "",
-      "Reviews": [
-        ["It's grest", 4.5],
-        ["it okay", 4.2]
-      ],
+      "Reviews": ["It's grest", "It's okay"],
       "image_url": "/images/mouse-1.jpg"
     }
   ]

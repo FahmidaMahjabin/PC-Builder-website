@@ -14,31 +14,31 @@ import Link from "next/link";
 const items = [
   {
     key: "1",
-    label: <Link href="/cpu">CPU/Processor</Link>,
+    label: <Link href="products/CPU">CPU/Processor</Link>,
   },
   {
     key: "2",
-    label: <Link href="/motherboard">Motherboard</Link>,
+    label: <Link href="products/Motherboard">Motherboard</Link>,
   },
   {
     key: "3",
-    label: <Link href="/ram">RAM</Link>,
+    label: <Link href="products/RAM">RAM</Link>,
   },
   {
     key: "4",
-    label: <Link href="/power-supply-unit">Power Supply Unit</Link>,
+    label: <Link href="products/Power Supply Unit">Power Supply Unit</Link>,
   },
   {
     key: "5",
-    label: <Link href="/storage-device">Storage Device</Link>,
+    label: <Link href="products/Storage Device">Storage Device</Link>,
   },
   {
     key: "6",
-    label: <Link href="/monitor">Monitor</Link>,
+    label: <Link href="products/Monitor">Monitor</Link>,
   },
   {
     key: "7",
-    label: <Link href="/other">other</Link>,
+    label: <Link href="products/Other">other</Link>,
   },
 ];
 const RootLayout = ({ children }) => {

@@ -1,14 +1,15 @@
 import Head from "next/head";
 import RootLayout from "@/components/Layouts/RootLayout";
 // import Banner from "@/components/UI/Banner";
-import Allproduct from "@/components/UI/AllProducts";
+
 import { useGetAllproductQuery } from "@/redux/api/apiSlice";
 import dynamic from "next/dynamic";
 import AllProducts from "@/components/UI/AllProducts";
 const HomePage = ({ product }) => {
   // console.log("product:", product);
-  // const { data, isLoading } = useGetAllproductQuery();
-  // console.log("data:", data);
+  const { data, isLoading } = useGetAllproductQuery();
+  const allproducts = data?.data;
+  console.log("allproducts:", allproducts);
   const DynamicBanner = dynamic(() => import("@/components/UI/Banner"), {
     loading: () => <h1>Loading</h1>,
     ssr: false,
@@ -25,7 +26,7 @@ const HomePage = ({ product }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <DynamicBanner></DynamicBanner>
-      <AllProducts allproducts={product}></AllProducts>
+      <AllProducts allproducts={allproducts}></AllProducts>
     </>
   );
 };
@@ -51,13 +52,17 @@ HomePage.getLayout = function getLayout(page) {
 //   return { props: { product } };
 // };
 
-export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:5000/product");
-  const product = await res.json();
-  // console.log("product from getStaticProps:", product);
-  return {
-    props: {
-      product,
-    },
-  };
-};
+// export const getStaticProps = async () => {
+//   await fetch("localhost:5000/product/all-products")
+//     .then((res) => res.json())
+//     .then((data) => {
+//       const product = data.data;
+//     });
+
+//   console.log("product from getStaticProps:", product);
+//   return {
+//     props: {
+//       product,
+//     },
+//   };
+// };

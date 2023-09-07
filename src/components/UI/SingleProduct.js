@@ -1,18 +1,13 @@
 import React from "react";
 import { Card, Col } from "antd";
 import Image from "next/image";
-import {
-  CalendarOutlined,
-  CommentOutlined,
-  ProfileOutlined,
-  ArrowRightOutlined,
-} from "@ant-design/icons";
+import { ArrowRightOutlined } from "@ant-design/icons";
 import Link from "next/link";
 const { Meta } = Card;
 export default function Singleproduct({ product }) {
   return (
     <>
-      <Col p={8}>
+      <Col className="gutter-row" span={6} p={8}>
         <Card
           hoverable
           cover={
