@@ -3,8 +3,13 @@ import { Card, Col } from "antd";
 import Image from "next/image";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import Link from "next/link";
+import { useDispatch, useSelector } from "react-redux";
+import { addToBuilder } from "@/redux/product";
 const { Meta } = Card;
 export default function Singleproduct({ product }) {
+  const dispatch = useDispatch();
+  const productsInBuild = useSelector((state) => state.product);
+  console.log("productInBuild:", productsInBuild);
   return (
     <>
       <Col className="gutter-row" span={6} p={8}>
@@ -53,6 +58,10 @@ export default function Singleproduct({ product }) {
           <br></br>
           <Link href={`http://localhost:3000/pc-builder-page`}>
             <button
+              onClick={() => {
+                console.log("clicked");
+                dispatch(addToBuilder(product));
+              }}
               style={{
                 // fontSize: "20px",
                 margin: "20px 0px",

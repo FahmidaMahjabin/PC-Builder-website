@@ -1,7 +1,9 @@
+import SelectedComponent from "@/components/UI/SelectedComponent";
 import { useGetProductByCategoryQuery } from "@/redux/api/apiSlice";
 import { Button, Card, Col, Row } from "antd";
 import Link from "next/link";
 import React from "react";
+import { useSelector } from "react-redux";
 const categories = [
   "CPU",
   "Motherboard",
@@ -16,6 +18,8 @@ export default function PCBuilderPage() {
     const category = event.target.title;
     // const { data, isLoading } = useGetProductByCategoryQuery(category);
   };
+  const productsInBuild = useSelector((state) => state.product);
+  console.log("productsInBuild from pc builder page:", productsInBuild);
   return (
     <div>
       <h1>PC-Builder</h1>
@@ -41,6 +45,23 @@ export default function PCBuilderPage() {
           </Col>
         ))}
       </Row>
+
+      <h1>Selected Components</h1>
+      <Row gutter={16}>
+        {productsInBuild?.map((product) => (
+          <SelectedComponent
+            product={product}
+            key={product.id}
+          ></SelectedComponent>
+        ))}
+      </Row>
+      {productsInBuild.length >= 5 ? (
+        <Button type="primary">Complete Button</Button>
+      ) : (
+        <Button disabled block>
+          Complete Button
+        </Button>
+      )}
     </div>
   );
 }
