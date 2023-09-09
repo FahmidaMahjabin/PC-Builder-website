@@ -34,8 +34,8 @@ export default function Singleproduct({ product }) {
             <p>Price: {product.price}</p>
             <p>Status: {product.status}</p>
           </p>
-          <Link href={`product/${product.id}`}>
-            <p
+          <Link href={`http://localhost:3000/products/product/${product.id}`}>
+            <button
               style={{
                 // fontSize: "20px",
                 margin: "20px 0px",
@@ -48,7 +48,24 @@ export default function Singleproduct({ product }) {
               }}
             >
               See Detail <ArrowRightOutlined />
-            </p>
+            </button>
+          </Link>
+          <br></br>
+          <Link href={`http://localhost:3000/pc-builder-page`}>
+            <button
+              style={{
+                // fontSize: "20px",
+                margin: "20px 0px",
+                backgroundColor: "black",
+                color: "white",
+                // width: "168px",
+                padding: "2px 5px ",
+                fontWeight: "300",
+                letterSpacing: "3px",
+              }}
+            >
+              Add to Builder <ArrowRightOutlined />
+            </button>
           </Link>
         </Card>
       </Col>

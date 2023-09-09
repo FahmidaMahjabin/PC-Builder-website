@@ -66,7 +66,7 @@ const RootLayout = ({ children }) => {
           </h1>
         </div>
         <Menu theme="dark" mode="vertical" className={styles.menu_items}>
-          <Link href="/pc-builder">
+          <Link href="/pc-builder-page">
             <items
               style={{
                 margin: "0px 25px",

@@ -10,7 +10,7 @@ export default function SameCategoryProduct({ products }) {
   // console.log("data:", data);
   console.log("products from sameCategoryProduct:", products);
   return (
-    <Row gutter={16}>
+    <Row gutter={16} justify="center">
       {products?.map((product) => (
         <Singleproduct key={product.id} product={product}></Singleproduct>
       ))}
@@ -30,7 +30,7 @@ export const getStaticPaths = async () => {
   console.log("paths:", paths);
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 };
 export const getStaticProps = async (context) => {
