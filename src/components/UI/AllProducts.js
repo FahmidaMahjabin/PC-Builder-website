@@ -7,7 +7,7 @@ const AllProducts = ({ allproducts }) => {
   // const featuredProducts = allproducts.splice(0, 6);
   // console.log("featuredProducts:", featuredProducts);
   return (
-    <Row gutter={16}>
+    <Row gutter={[16, 16]}>
       {allproducts?.map((product) => (
         <Singleproduct product={product} key={product?.id}></Singleproduct>
       ))}

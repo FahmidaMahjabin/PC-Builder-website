@@ -58,9 +58,7 @@ export default function PCBuilderPage() {
       {productsInBuild.length >= 5 ? (
         <Button type="primary">Complete Button</Button>
       ) : (
-        <Button disabled block>
-          Complete Button
-        </Button>
+        <Button disabled>Complete Button</Button>
       )}
     </div>
   );

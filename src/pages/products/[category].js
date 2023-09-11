@@ -21,7 +21,9 @@ SameCategoryProduct.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:5000/product/all-products");
+  const res = await fetch(
+    "https://book-library-server-green.vercel.app/product/all-products"
+  );
   const data = await res.json();
   //   console.log("allproduct:", allproduct);
   const paths = data?.data?.map((product) => ({
@@ -37,7 +39,9 @@ export const getStaticProps = async (context) => {
   //   console.log("context:", context);
   const { category } = context.params;
   console.log("category:", category);
-  const res = await fetch(`http://localhost:5000/product/${category}`);
+  const res = await fetch(
+    `https://book-library-server-green.vercel.app/product/${category}`
+  );
   const data = await res.json();
 
   return {

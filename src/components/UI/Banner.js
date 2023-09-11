@@ -6,6 +6,8 @@ import {
   ProfileOutlined,
 } from "@ant-design/icons";
 import Image from "next/image";
+import banner1 from "@/assets/images/banner-images/banner-1.jpg";
+import banner2 from "@/assets/images/banner-images/banner-2.jpg";
 import DrawingImage from "@/assets/images/banner-images/drawing_image.jpg";
 import EagleImage from "@/assets/images/banner-images/eagle_image.jpg";
 
@@ -60,10 +62,11 @@ const Banner = () => (
           </p>
 
           <p style={{ fontSize: "20px" }}>
-            Beauteous before up across felt sheepishly and more mournfully the
-            wow so more flustered and one up pushed salamander collective
-            blinked that iguanodon bid much some since hey far goodness jaguar
-            whil...
+            PC builder websites aim to simplify the process of building a custom
+            PC, making it accessible to a wide range of users, from beginners to
+            experienced enthusiasts. They provide the tools and resources needed
+            to create a computer that meets specific performance, budget, and
+            aesthetic requirements.
           </p>
           <p
             style={{
@@ -87,7 +90,7 @@ const Banner = () => (
           }}
           style={contentStyle}
         >
-          <Image src={DrawingImage} fill alt="drawing_image" />
+          <Image src={banner1} fill alt="drawing_image" />
         </Col>
       </Row>
     </div>
@@ -100,9 +103,9 @@ const Banner = () => (
           }}
         >
           <h1 style={{ fontSize: "50px" }}>
-            EAGLE, YOU ARE
+            GET, DREAM COMPUTER
             <br />
-            NOT ALONE
+            MAKE DREAM
           </h1>
           <div
             className="line"
@@ -162,7 +165,7 @@ const Banner = () => (
           style={contentStyle}
         >
           <Image
-            src={EagleImage}
+            src={banner2}
             fill
             alt="eagle_image"
             style={{ grayScale: "-1" }}

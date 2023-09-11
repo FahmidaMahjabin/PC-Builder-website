@@ -37,7 +37,7 @@ HomePage.getLayout = function getLayout(page) {
 };
 // using json-server
 // export const getServerSideProps = async () => {
-//   const res = await fetch("http://localhost:5000/product");
+//   const res = await fetch("https://book-library-server-green.vercel.app/product");
 //   const product = await res.json();
 //   console.log("product:", product);
 //   return { props: { product }, revalidate: 10 };
